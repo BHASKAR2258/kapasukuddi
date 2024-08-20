@@ -327,7 +327,7 @@
     <h3><a href="https://www.instagram.com/shivatarak196__/" target="https://www.instagram.com/shivatarak196__/">https://www.instagram.com/shivatarak196__/</a></h3></p> </div>
 <hr>
     
-    <div class="special" id="sports">
+    <div class="special" id="specials">
         <h2>specials</h2>
         <div class="specials-titles">
             <p class="specials-links active-link" data-target="youtube"><div><h1>YOUTUBE</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/0g4fJZ9E1Kc?si=dRdCPcoL7Ke4-utB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
