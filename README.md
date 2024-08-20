@@ -96,7 +96,7 @@
             <p class="sports-links" data-target="freefire">Freefire</p>
         </div>
         <div class="sports-content active-content" id="cricket">
-            <img src="cricket.jpg">
+            <marquee><img src="cricket.jpg"></marquee>
             <p>**Cricket in Kapaasukuddi**
 
                 Kapaasukuddi, a picturesque village known for its vibrant community life, has embraced cricket with great enthusiasm. The sport has become a central part of village culture, providing entertainment, fostering community spirit, and encouraging youth engagement.
