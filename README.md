@@ -53,7 +53,7 @@
     <!-- Streets Table -->
     <div class="table" id="streets">
         <h2>Streets</h2>
-        <table  align="cover">
+        <table >
             <tr>
                 <th>S.No</th>
                 <th>Street Name</th>
