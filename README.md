@@ -94,7 +94,7 @@
             <p class="sports-links active-link" data-target="cricket">Cricket</p>
             <p class="sports-links" data-target="kabaddi">Kabaddi</p>
             <p class="sports-links" data-target="freefire">Freefire</p>
-        </div>
+    
         <div class="sports-content active-content" id="cricket">
             <marquee><img src="cricket.jpg"></marquee>
             <p>**Cricket in Kapaasukuddi**
