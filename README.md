@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -53,7 +54,7 @@
     <!-- Streets Table -->
     <div class="table" id="streets">
         <h2>Streets</h2>
-        <table >
+        <table border="4">
             <tr>
                 <th>S.No</th>
                 <th>Street Name</th>
@@ -94,9 +95,9 @@
             <p class="sports-links active-link" data-target="cricket">Cricket</p>
             <p class="sports-links" data-target="kabaddi">Kabaddi</p>
             <p class="sports-links" data-target="freefire">Freefire</p>
-    
+        </div>
         <div class="sports-content active-content" id="cricket">
-            <marquee><img src="cricket.jpg"></marquee>
+            <img src="cricket.jpg">
             <p>**Cricket in Kapaasukuddi**
 
                 Kapaasukuddi, a picturesque village known for its vibrant community life, has embraced cricket with great enthusiasm. The sport has become a central part of village culture, providing entertainment, fostering community spirit, and encouraging youth engagement.
@@ -327,14 +328,14 @@
     <h3><a href="https://www.instagram.com/shivatarak196__/" target="https://www.instagram.com/shivatarak196__/">https://www.instagram.com/shivatarak196__/</a></h3></p> </div>
 <hr>
     
-    <div class="special" id="specials">
+    <div class="special" id="sports">
         <h2>specials</h2>
         <div class="specials-titles">
-            <p class="specials-links active-link" data-target="youtube"><div><h1>YOUTUBE</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/0g4fJZ9E1Kc?si=dRdCPcoL7Ke4-utB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="specials-links active-link" data-target="youtube"><div><h1>YOUTUBE</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/0g4fJZ9E1Kc?si=dRdCPcoL7Ke4-utB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
             <p class="specials-links" data-target="instagram"><h1>INSTAGRAM</h1></p>
             <p class="specials-links" data-target="facebook"><h1>FACEBOOK</h1></p>
         </div>
-        </div>
+</div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Sports Tabs Functionality
@@ -412,4 +413,5 @@
         });
     </script>
    
-
+</body>
+</html>
