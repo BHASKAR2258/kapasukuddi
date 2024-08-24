@@ -335,7 +335,6 @@
             <p class="specials-links" data-target="instagram"><h1>INSTAGRAM</h1></p>
             <p class="specials-links" data-target="facebook"><h1>FACEBOOK</h1></p>
         </div>
-</div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Sports Tabs Functionality
