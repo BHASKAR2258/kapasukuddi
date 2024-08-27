@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -313,7 +313,7 @@
         </div>
     </div>
 <hr>
-<div class="shortfilms" id="film">
+<div class="shortfilms" id="shortfilms">
     <h2>short films</h2>
     <div class="film-titles">
         <p class="film-links active-link" data-target="dileep">dileep</p>
@@ -328,87 +328,102 @@
     <h3><a href="https://www.instagram.com/shivatarak196__/" target="https://www.instagram.com/shivatarak196__/">https://www.instagram.com/shivatarak196__/</a></h3></p> </div>
 <hr>
     
-    <div class="special" id="sports">
-        <h2>specials</h2>
-        <div class="specials-titles">
-            <p class="specials-links active-link" data-target="youtube"><div><h1>YOUTUBE</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/0g4fJZ9E1Kc?si=dRdCPcoL7Ke4-utB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-            <p class="specials-links" data-target="instagram"><h1>INSTAGRAM</h1></p>
-            <p class="specials-links" data-target="facebook"><h1>FACEBOOK</h1></p>
-        </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Sports Tabs Functionality
-            const sportsLinks = document.querySelectorAll('.sports-links');
-            const sportsContents = document.querySelectorAll('.sports-content');
+<div class="specials" id="specials">
+    <h2>Specials</h2>
+    <div class="special-titles">
+        <p class="special-links active-link" data-target="youtube">YouTube</p>
+        <p class="special-links" data-target="instagram">Instagram</p>
+        <p class="special-links" data-target="facebook">Facebook</p>
+    </div>
+    <div class="special-content active-content" id="youtube">
+        <h3>YouTube Link</h3>
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/0g4fJZ9E1Kc?si=mAxsZHDn3J-8d7MG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+    </div>
+    <div class="special-content" id="instagram">
+        <h3>Instagram Link</h3>
+        <p>Hello</p>
+    </div>
+    <div class="special-content" id="facebook">
+        <h3>Facebook Link</h3>
+        <p>Haii</p>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sports Tabs Functionality
+        const sportsLinks = document.querySelectorAll('.sports-links');
+        const sportsContents = document.querySelectorAll('.sports-content');
 
-            sportsLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    // Remove active-link class from all sports links
-                    sportsLinks.forEach(link => link.classList.remove('active-link'));
-                    // Hide all sports contents
-                    sportsContents.forEach(content => content.classList.remove('active-content'));
+        sportsLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove active-link class from all sports links
+                sportsLinks.forEach(link => link.classList.remove('active-link'));
+                // Hide all sports contents
+                sportsContents.forEach(content => content.classList.remove('active-content'));
 
-                    // Add active-link class to clicked link
-                    this.classList.add('active-link');
-                    // Show corresponding sports content
-                    document.getElementById(this.dataset.target).classList.add('active-content');
-                });
-            });
-
-            // Festivals Tabs Functionality
-            const festLinks = document.querySelectorAll('.fest-links');
-            const festContents = document.querySelectorAll('.fest-content');
-
-            festLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    // Remove active-link class from all fest links
-                    festLinks.forEach(link => link.classList.remove('active-link'));
-                    // Hide all fest contents
-                    festContents.forEach(content => content.classList.remove('active-content'));
-
-                    // Add active-link class to clicked link
-                    this.classList.add('active-link');
-                    // Show corresponding fest content
-                    const festContent = document.getElementById(this.dataset.target);
-                    festContent.classList.add('active-content');
-                });
-            });
-             // shortfilms Tabs Functionality
-             const filmLinks = document.querySelectorAll('.film-links');
-            const filmContents = document.querySelectorAll('.film-content');
-
-            filmLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    // Remove active-link class from all fest links
-                    filmLinks.forEach(link => link.classList.remove('active-link'));
-                    // Hide all fest contents
-                    filmContents.forEach(content => content.classList.remove('active-content'));
-
-                    // Add active-link class to clicked link
-                    this.classList.add('active-link');
-                    // Show corresponding fest content
-                    const filmContent = document.getElementById(this.dataset.target);
-                    filmContent.classList.add('active-content');
-                });
-            });
-            // specials Tabs Functionality
-            const specialsLinks = document.querySelectorAll('.special-links');
-            const specialsContents = document.querySelectorAll('.special-content');
-
-            specialsLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    // Remove active-link class from all fest links
-                    specialsLinks.forEach(link => link.classList.remove('active-link'));
-                    // Hide all fest contents
-                    specialsContents.forEach(content => content.classList.remove('active-content'));
-
-                    // Add active-link class to clicked link
-                    this.classList.add('active-link');
-                    // Show corresponding fest content
-                    const specialsContent = document.getElementById(this.dataset.target);
-                    specialsContent.classList.add('active-content');
-                });
+                // Add active-link class to clicked link
+                this.classList.add('active-link');
+                // Show corresponding sports content
+                document.getElementById(this.dataset.target).classList.add('active-content');
             });
         });
-    </script>
 
+        // Festivals Tabs Functionality
+        const festLinks = document.querySelectorAll('.fest-links');
+        const festContents = document.querySelectorAll('.fest-content');
+
+        festLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove active-link class from all fest links
+                festLinks.forEach(link => link.classList.remove('active-link'));
+                // Hide all fest contents
+                festContents.forEach(content => content.classList.remove('active-content'));
+
+                // Add active-link class to clicked link
+                this.classList.add('active-link');
+                // Show corresponding fest content
+                const festContent = document.getElementById(this.dataset.target);
+                festContent.classList.add('active-content');
+            });
+        });
+         // shortfilms Tabs Functionality
+         const filmLinks = document.querySelectorAll('.film-links');
+        const filmContents = document.querySelectorAll('.film-content');
+
+        filmLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove active-link class from all fest links
+                filmLinks.forEach(link => link.classList.remove('active-link'));
+                // Hide all fest contents
+                filmContents.forEach(content => content.classList.remove('active-content'));
+
+                // Add active-link class to clicked link
+                this.classList.add('active-link');
+                // Show corresponding fest content
+                const filmContent = document.getElementById(this.dataset.target);
+                filmContent.classList.add('active-content');
+            });
+        });
+       // specials Tabs Functionality
+       const speciallinks = document.querySelectorAll('.special-links');
+        const specialContents = document.querySelectorAll('.special-content');
+
+        specialLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove active-link class from all fest links
+                specialLinks.forEach(link => link.classList.remove('active-link'));
+                // Hide all fest contents
+                specialContents.forEach(content => content.classList.remove('active-content'));
+
+                // Add active-link class to clicked link
+                this.classList.add('active-link');
+                // Show corresponding fest content
+                const specialContent = document.getElementById(this.dataset.target);
+                specialContent.classList.add('active-content');
+            });
+        });
+    });
+</script>  
+   
+</body>
+</html>
