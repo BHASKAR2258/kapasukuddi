@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -340,11 +341,9 @@
     </div>
     <div class="special-content" id="instagram">
         <h3>Instagram Link</h3>
-        <p>Hello</p>
     </div>
     <div class="special-content" id="facebook">
         <h3>Facebook Link</h3>
-        <p>Haii</p>
     </div>
 </div>
 <script>
@@ -404,7 +403,7 @@
             });
         });
        // specials Tabs Functionality
-       const speciallinks = document.querySelectorAll('.special-links');
+       const specialLinks = document.querySelectorAll('.special-links');
         const specialContents = document.querySelectorAll('.special-content');
 
         specialLinks.forEach(link => {
@@ -423,3 +422,6 @@
         });
     });
 </script>  
+   
+</body>
+</html>
