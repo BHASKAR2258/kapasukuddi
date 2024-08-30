@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapasukuddi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="amma.jpg" class="logo" alt="Logo">
+                <h1>C.H KAPASUKUDDI </h1>
+                <p>village of beauty</p>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">streets</a></li>
+                    <li><a href="#">sports</a></li>
+                    <li><a href="#">festivals</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+        <div class="header-text">
+            <h3>C.H KAPASUKUDDI</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellendus dolorum porro, dolorem ad nobis. Aut, sit deleniti eos eum laboriosam animi ipsam temporibus fugit perferendis quo! Dignissimos, porro illo.</p>
+        </div>
+    
+
+    <!-- Streets Table -->
+    <div class="table">
+        <table border="1">
+            <tr>
+                <th>S.No</th>
+                <th>Street Name</th>
+                <th>No of Houses</th>
+                <th>Temple</th>
+            </tr>
+            <tr>
+                <td>1
+                </td>
+                <td>SAIRAM STREET</td>
+                <td>50</td>
+                <td><a href="sairam.jpg">sairam temple</a></td>
+                </tr>
+                <td>2
+                </td>
+                <td>PEDDA STREET</td>
+                <td>120</td>
+                <td><a href="vinayaka chaviti.jpg">vinayaka temple</a></td>
+            </tr>
+                <td>3
+                </td>
+                <td>GANGAMATA STREET</td>
+                <td>80</td>
+                <td><a href="ganga.jpg">gangamatha temple</a></td>
+            </tr>
+                <td>4
+                </td>
+                <td>BHARATHAMATA STREET</td>
+                <td>100</td>
+                <td><a href="bharath.jpg">bharathamatha temple</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Sports Section -->
+    <div class="sports">
+        <div class="sports-titles" id="games">
+            <p class="sports-links active-link" data-target="cricket">cricket</p> 
+            <p class="sports-links" data-target="kabaddi">kabaddi</p>
+            <p class="sports-links" data-target="freefire">freefire</p>
+        </div>
+        <div class="sports-content active-content" id="cricket">
+            <p>Content about cricket.</p>
+        </div>
+        <div class="sports-content" id="kabaddi">
+            <p>Content about kabaddi.</p>
+        </div>
+        <div class="sports-content" id="freefire">
+            <p>Content about freefire.</p>
+        </div>
+    </div>
+
+    <!-- Festivals Section -->
+    <div class="festivals">
+        <div class="fest-titles">
+            <p class="fest-links active-link" data-target="pongal">pongal</p>
+            <p class="fest-links" data-target="dasara">dasara</p>
+            <p class="fest-links" data-target="vinayaka-chaviti">vinayaka chaviti</p>
+        </div>
+        <div class="fest-content active-content" id="pongal" style="background-image: url('pongal.jpg');">
+            <p>Content about Pongal festival.</p>
+        </div>
+        <div class="fest-content" id="dasara" >
+            <p>Content about Dasara festival.</p>
+        </div>
+        <div class="fest-content" id="vinayaka-chaviti">
+            <p>Content about Vinayaka Chaviti festival.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sports Tabs Functionality
+            const sportsLinks = document.querySelectorAll('.sports-links');
+            const sportsContents = document.querySelectorAll('.sports-content');
+
+            sportsLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Remove active-link class from all sports links
+                    sportsLinks.forEach(link => link.classList.remove('active-link'));
+                    // Hide all sports contents
+                    sportsContents.forEach(content => content.classList.remove('active-content'));
+
+                    // Add active-link class to clicked link
+                    this.classList.add('active-link');
+                    // Show corresponding sports content
+                    document.getElementById(this.dataset.target).classList.add('active-content');
+                });
+            });
+
+            // Festivals Tabs Functionality
+            const festLinks = document.querySelectorAll('.fest-links');
+            const festContents = document.querySelectorAll('.fest-content');
+
+            festLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Remove active-link class from all fest links
+                    festLinks.forEach(link => link.classList.remove('active-link'));
+                    // Hide all fest contents
+                    festContents.forEach(content => content.classList.remove('active-content'));
+
+                    // Add active-link class to clicked link
+                    this.classList.add('active-link');
+                    // Show corresponding fest content
+                    const festContent = document.getElementById(this.dataset.target);
+                    festContent.classList.add('active-content');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
