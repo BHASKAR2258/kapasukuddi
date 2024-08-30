@@ -18,7 +18,7 @@
                     <li><a href="#sports">Sports</a></li>
                     <li><a href="#festivals">Festivals</a></li>
                     <li><a href="#shortfilms">shortfilms</a></li>
-                    <li><a href="#special">specials</a></li>
+                    <li><a href="#specials">specials</a></li>
                 </ul>
             </nav>
         </div>
