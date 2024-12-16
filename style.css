@@ -3,11 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(236, 240, 239);
+    background-color: rgb(235, 253, 248);
 }
 .header {
-    background-color: #0b0c0c;
-    padding: 20px;
+    background-color: #000000;
+    padding: 10px;
 }
 
 .container {
@@ -41,10 +41,12 @@ ul {
     padding-left: 780px;
     display: flex;
     margin: 0;
+  
 }
 
 ul li {
     margin-left: 45px;
+   
 }
 
 ul li a {
@@ -101,9 +103,10 @@ ul li a:hover {
     cursor: pointer;
 }
 
-.active-link {
+.active-link:hover {
     font-weight: bold;
     color: #007bff;
+
 }
 
 .sports-content, .fest-content, .film-content, .special-content{
@@ -161,4 +164,59 @@ width: 100%;
     color:rgb(30, 181, 201);
     background-size: cover;
     background-position: center;
+}
+/*form css*/
+#myform {
+    color: rgb(19, 20, 20);
+    text-align:center ;
+}
+#myform h2{
+    color: #a40deb;
+}
+.name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    
+    font-style: italic;
+}
+.phone {
+    font-family: 'times new roman', Times, serif;
+    font-size: large;
+    font-style: italic;
+}
+.comment {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-style: italic;
+}
+#name {
+    width: 400px;
+    height: 30px;
+    font-size: large;
+    text-align: center;
+
+}
+#phone {
+    width: 400px;
+    height: 30px;
+    font-size: large;
+    text-align: center;
+
+}
+#comment {
+    width: 400px;
+    height: 150px;
+    font-size: large;
+    text-align: center;
+
+}
+button {
+    height: 35px;
+    width: 70px;
+    transition: 1s;
+}
+button:hover{
+    color: aqua;
+    background-color: #020318;
+    border-radius: 20px;
 }
